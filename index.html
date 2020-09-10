@@ -390,13 +390,36 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" data-modal-close class="close-btn">X</button>
+
+				<h2>Оставьте свои данные, мы вам перезвоним</h2>
+
 				<form action="" class="modal-form">
-					<input type="text" class="modal-form-input" />
-					<input type="text" class="modal-form-input" />
-					<input type="text" class="modal-form-input" />
-					<textarea name="" id="" cols="30" rows="10" class="modal-form-textarea"></textarea>
-					<input type="checkbox" class="modal-form-policy" />
-					<label for="" class="modal-form-label-policy"></label>
+					<div class="modal-form-field">
+						<input type="text" name="user-name" id="user-name" class="modal-form-input" />
+						<label for="user-name">Имя</label>
+					</div>
+
+					<div class="modal-form-field">
+						<input type="tel" name="user-phone" id="user-phone" class="modal-form-input" />
+						<label for="user-phone">Телефон</label>
+					</div>
+
+					<div class="modal-form-field">
+						<input type="email" name="user-email" id="user-email" class="modal-form-input" />
+						<label for="user-email">Почта</label>
+					</div>
+
+					<div class="modal-form-field">
+						<textarea name="user-massage" class="modal-form-message"></textarea>
+						<label for="">Комментарий</label>
+					</div>
+
+					<input type="checkbox" name="user-policy" id="user-policy" class="modal-form-policy" />
+					<label for="user-policy" class="modal-form-label-policy">
+						Соглашаюсь с рассылкой и принимаю
+						<a href="">Условия договора</a>
+					</label>
+
 					<button type="submit" class="modal-form-btn">Отправить</button>
 				</form>
 			</div>
