@@ -34,7 +34,7 @@
 						<li class="item">
 							<a href="mailto:info@devstudio.com" class="mail link current">
 								<svg class="mail-svg">
-									<use href="./images/sprite.svg#mail"></use>
+									<use href="./images/sprite.svg#envelope"></use>
 								</svg>
 								info@devstudio.com
 							</a>
@@ -42,7 +42,7 @@
 						<li>
 							<a href="tel:+380961111111" class="phone link current">
 								<svg class="phone-svg">
-									<use href="./images/sprite.svg#phone"></use>
+									<use href="./images/sprite.svg#smartphone"></use>
 								</svg>
 								+38 096 111 11 11
 							</a>
@@ -388,40 +388,50 @@
 		</footer>
 
 		<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button type="button" data-modal-close class="close-btn">X</button>
+			<div class="pop-up">
+				<div class="modal">
+					<h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
 
-				<h2>Оставьте свои данные, мы вам перезвоним</h2>
+					<form action="" class="modal-form">
+						<div class="modal-form-field">
+							<label for="user-name">Имя</label>
+							<input type="text" name="user-name" id="user-name" class="modal-form-input" />
+							<!-- <svg class="modal-form-icon">
+								<use href="./images/sprite.svg#name"></use>
+							</svg> -->
+						</div>
 
-				<form action="" class="modal-form">
-					<div class="modal-form-field">
-						<input type="text" name="user-name" id="user-name" class="modal-form-input" />
-						<label for="user-name">Имя</label>
-					</div>
+						<div class="modal-form-field">
+							<label for="user-phone">Телефон</label>
+							<input type="tel" name="user-phone" id="user-phone" class="modal-form-input" />
+							<!-- <svg class="modal-form-icon">
+								<use href="./images/sprite.svg#phone"></use>
+							</svg> -->
+						</div>
 
-					<div class="modal-form-field">
-						<input type="tel" name="user-phone" id="user-phone" class="modal-form-input" />
-						<label for="user-phone">Телефон</label>
-					</div>
+						<div class="modal-form-field">
+							<label for="user-email">Почта</label>
+							<input type="email" name="user-email" id="user-email" class="modal-form-input" />
+							<!-- <svg>
+								<use href="./images/sprite.svg#mail"></use>
+							</svg> -->
+						</div>
 
-					<div class="modal-form-field">
-						<input type="email" name="user-email" id="user-email" class="modal-form-input" />
-						<label for="user-email">Почта</label>
-					</div>
+						<div class="modal-form-field">
+							<label for="">Комментарий</label>
+							<textarea name="user-massage" class="modal-form-message"></textarea>
+						</div>
 
-					<div class="modal-form-field">
-						<textarea name="user-massage" class="modal-form-message"></textarea>
-						<label for="">Комментарий</label>
-					</div>
+						<input type="checkbox" name="user-policy" id="user-policy" class="modal-form-policy" />
+						<label for="user-policy" class="modal-form-label-policy">
+							Соглашаюсь с рассылкой и принимаю
+							<a href="">Условия договора</a>
+						</label>
 
-					<input type="checkbox" name="user-policy" id="user-policy" class="modal-form-policy" />
-					<label for="user-policy" class="modal-form-label-policy">
-						Соглашаюсь с рассылкой и принимаю
-						<a href="">Условия договора</a>
-					</label>
-
-					<button type="submit" class="modal-form-btn">Отправить</button>
-				</form>
+						<button type="submit" class="modal-form-btn">Отправить</button>
+					</form>
+					<button type="button" data-modal-close class="close-btn">X</button>
+				</div>
 			</div>
 		</div>
 
